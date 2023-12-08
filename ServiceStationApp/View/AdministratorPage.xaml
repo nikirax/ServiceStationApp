@@ -1,0 +1,22 @@
+﻿<Window x:Class="ServiceStationApp.View.AdministratorPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ServiceStationApp.View"
+        mc:Ignorable="d"
+        Title="Страница администратора" Height="600" Width="1200">
+    <Grid Style="{StaticResource ClassicBack}">
+        <StackPanel Orientation="Horizontal" Width="1150" Height="65" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10">
+            <Button Style="{StaticResource adminbtns}" Width="320" Content="Добавить клиента" x:Name="addClient" Click="addClient_Click"/>
+            <Rectangle Width="60"/>
+            <Button Style="{StaticResource adminbtns}" Width="320" Content="Добавить машину"/>
+            <Rectangle Width="60"/>
+            <Button Style="{StaticResource adminbtns}" Width="390" Content="Добавить сотрудника"/>
+        </StackPanel>
+        <DataGrid HorizontalAlignment="Center" VerticalAlignment="Top" Height="449" Width="1150" Margin="0,109,0,0" x:Name="dataGrid">
+            
+        </DataGrid>
+
+    </Grid>
+</Window>
