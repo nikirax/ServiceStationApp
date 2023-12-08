@@ -20,17 +20,17 @@ namespace ServiceStationApp.Controls
             get { return name; }
             set { name = value; }
         }
-        private string second_name { get; set; }
-        public string Second_Name
+        private string secondName { get; set; }
+        public string SecondName
         {
-            get { return second_name; }
-            set { second_name = value; }
+            get { return secondName; }
+            set { secondName = value; }
         }
-        private string third_name { get; set; }
-        public string Third_Name
+        private string thirdName { get; set; }
+        public string ThirdName
         {
-            get { return third_name; }
-            set { third_name = value; }
+            get { return thirdName; }
+            set { thirdName = value; }
         }
         private string passport { get; set; }
         public string Passport
@@ -39,13 +39,13 @@ namespace ServiceStationApp.Controls
             set { passport = value; }
         }
         public User() { }
-        public User(int _id, string _name, string _second_name, string _third_name, string _passport)
+        public User(int id, string name, string second_name, string thirdName, string passport)
         {
-            ID = _id;
-            Name = _name;
-            Second_Name = _second_name; 
-            Third_Name = _third_name;
-            Passport = _passport;
+            ID = id;
+            Name = name;
+            SecondName = second_name;
+            ThirdName = thirdName;
+            Passport = passport;
         }
     }
 }

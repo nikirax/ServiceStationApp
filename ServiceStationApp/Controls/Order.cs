@@ -14,17 +14,17 @@ namespace ServiceStationApp.Controls
             get { return id; }
             set { id = value; }
         }
-        private int id_client { get; set; }
-        public int ID_Client
+        private int idClient { get; set; }
+        public int IdClient
         {
-            get { return id_client; }
-            set { id_client = value; }
+            get { return idClient; }
+            set { idClient = value; }
         }
-        private int id_car { get; set; }
-        public int ID_Car
+        private int idCar { get; set; }
+        public int IdCar
         {
-            get { return id_car; }
-            set { id_car = value; }
+            get { return idCar; }
+            set { idCar = value; }
         }
         private string subject { get; set; }
         public string Subject
@@ -45,14 +45,14 @@ namespace ServiceStationApp.Controls
             set { price = value; }
         }
         public Order() { }
-        public Order(int _id, int _id_Client, int _id_Car, string _subject, string _about, string _price)
+        public Order(int id, int idClient, int idCar, string subject, string about, string price)
         {
-            ID = _id;
-            ID_Client = _id_Client;
-            ID_Car = _id_Car;
-            Subject = _subject;
-            About = _about;
-            Price = _price;
+            ID = id;
+            IdClient = idClient;
+            IdCar = idCar;
+            Subject = subject;
+            About = about;
+            Price = price;
         }
     }
 }

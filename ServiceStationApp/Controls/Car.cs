@@ -26,11 +26,11 @@ namespace ServiceStationApp.Controls
             get { return model; }
             set { model = value; }
         }
-        private string year_maid { get; set; }
-        public string Year_maid
+        private string yearMaid { get; set; }
+        public string YearMaid
         {
-            get { return year_maid; }
-            set { year_maid = value; }
+            get { return yearMaid; }
+            set { yearMaid = value; }
         }
         private string pts { get; set; }
         public string PTS
@@ -39,13 +39,13 @@ namespace ServiceStationApp.Controls
             set { pts = value; }
         }
         public Car() { }
-        public Car(int _id, string _mark, string _model, string _year_maid, string _pts)
+        public Car(int id, string mark, string model, string yearMaid, string pts)
         {
-            ID = _id;
-            Mark = _mark;
-            Model = _model;
-            Year_maid = _year_maid;
-            PTS = _pts;
+            ID = id;
+            Mark = mark;
+            Model = model;
+            YearMaid = yearMaid;
+            PTS = pts;
         }
     }
 }
