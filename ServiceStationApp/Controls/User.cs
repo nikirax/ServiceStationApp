@@ -8,11 +8,11 @@ namespace ServiceStationApp.Controls
 {
     public class User
     {
-        private int id { get; set; }
-        public int ID
+        private int iD { get; set; }
+        public int id
         {
-            get { return id; }
-            set { id = value; }
+            get { return iD; }
+            set { iD = value; }
         }
         private string name { get; set; }
         public string Name
@@ -39,9 +39,8 @@ namespace ServiceStationApp.Controls
             set { passport = value; }
         }
         public User() { }
-        public User(int id, string name, string second_name, string thirdName, string passport)
+        public User(string name, string second_name, string thirdName, string passport)
         {
-            ID = id;
             Name = name;
             SecondName = second_name;
             ThirdName = thirdName;

@@ -8,11 +8,11 @@ namespace ServiceStationApp.Controls
 {
     public class Order
     {
-        private int id { get; set; }
-        public int ID
+        private int iD { get; set; }
+        public int id
         {
-            get { return id; }
-            set { id = value; }
+            get { return iD; }
+            set { iD = value; }
         }
         private int idClient { get; set; }
         public int IdClient
@@ -45,9 +45,8 @@ namespace ServiceStationApp.Controls
             set { price = value; }
         }
         public Order() { }
-        public Order(int id, int idClient, int idCar, string subject, string about, string price)
+        public Order(int idClient, int idCar, string subject, string about, string price)
         {
-            ID = id;
             IdClient = idClient;
             IdCar = idCar;
             Subject = subject;

@@ -11,7 +11,7 @@
             <ImageBrush ImageSource="\Assets\Image\MainBackGround.jpeg" Stretch="UniformToFill"/>
         </Grid.Background>
         <StackPanel x:Name="Content" Width="780" Height="422" VerticalAlignment="Center" HorizontalAlignment="Center">
-            <TextBlock Text="Добро пожаловать!" VerticalAlignment="Top" HorizontalAlignment="Center"/>
+            <TextBlock Text="Добро пожаловать!" VerticalAlignment="Top" HorizontalAlignment="Center" Style="{StaticResource MS}"/>
             <Border Height="18"/>
             <Button Width="700" Height="85" x:Name="btn1" Click="btn1_Click" Content="Клиент"/>
             <Border Height="12"/>

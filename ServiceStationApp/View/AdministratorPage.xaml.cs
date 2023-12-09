@@ -34,12 +34,34 @@ namespace ServiceStationApp.View
             cars = db.Cars.ToList();
             orders = db.Orders.ToList();
 
-            dataGrid.ItemsSource = users;
+            dataGrid.ItemsSource = orders;
         }
 
         private void addClient_Click(object sender, RoutedEventArgs e)
         {
+            AddClient add = new AddClient();
+            add.Show();
+        }
 
+        private void dataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
+        {
+            //TODO: Сделать отображение клиента или машины в зависимости от выбранного id
+            var selectedItem = (sender as DataGrid)?.SelectedItem;
+
+            if (selectedItem != null)
+            {
+                foreach(Order order in orders)
+                {
+                    if (order == selectedItem)
+                        MessageBox.Show(order.Price);
+                }
+            }
+        }
+
+        private void addCar_Click(object sender, RoutedEventArgs e)
+        {
+            AddCar add = new AddCar();
+            add.Show();
         }
     }
 }

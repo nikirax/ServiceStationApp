@@ -10,13 +10,17 @@
         <StackPanel Orientation="Horizontal" Width="1150" Height="65" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="10">
             <Button Style="{StaticResource adminbtns}" Width="320" Content="Добавить клиента" x:Name="addClient" Click="addClient_Click"/>
             <Rectangle Width="60"/>
-            <Button Style="{StaticResource adminbtns}" Width="320" Content="Добавить машину"/>
+            <Button Style="{StaticResource adminbtns}" Width="320" Content="Добавить машину" x:Name="addCar" Click="addCar_Click" />
             <Rectangle Width="60"/>
             <Button Style="{StaticResource adminbtns}" Width="390" Content="Добавить сотрудника"/>
         </StackPanel>
-        <DataGrid HorizontalAlignment="Center" VerticalAlignment="Top" Height="449" Width="1150" Margin="0,109,0,0" x:Name="dataGrid">
-            
-        </DataGrid>
-
+        <DataGrid HorizontalAlignment="Center" 
+                  VerticalAlignment="Top" 
+                  Height="449" 
+                  Width="1150" 
+                  Margin="0,109,0,0" 
+                  x:Name="dataGrid" 
+                  Style="{StaticResource Orders}" MouseDoubleClick="dataGrid_MouseDoubleClick" 
+                  IsReadOnly="True"/>
     </Grid>
 </Window>

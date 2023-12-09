@@ -8,11 +8,11 @@ namespace ServiceStationApp.Controls
 {
     public class Car
     {
-        private int id { get; set; }
-        public int ID
+        private int iD { get; set; }
+        public int id
         {
-            get { return id; }
-            set { id = value; }
+            get { return iD; }
+            set { iD = value; }
         }
         private string mark { get; set; }
         public string Mark
@@ -39,9 +39,8 @@ namespace ServiceStationApp.Controls
             set { pts = value; }
         }
         public Car() { }
-        public Car(int id, string mark, string model, string yearMaid, string pts)
+        public Car(string mark, string model, string yearMaid, string pts)
         {
-            ID = id;
             Mark = mark;
             Model = model;
             YearMaid = yearMaid;
